@@ -102,7 +102,7 @@
         const noDataMessage = document.getElementById('no-data-message');
         let allData = []; // Simpan semua data untuk pencarian
 
-        if (GOOGLE_SHEET_URL === 'PASTE_URL_CSV_ANDA_DI_SINI' || !GOOGLE_SHEET_URL) {
+        if (GOOGLE_SHEET_URL === 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS72Zyrvce2GBzZ3ttAotAieYlNvdMhIS4Yn6QDshilN8ad8XMXbMNO8TDuut3vAKeTzv-8ybIhlFOh/pub?gid=0&single=true&output=csv' || !GOOGLE_SHEET_URL) {
             loader.innerHTML = '<p class="text-red-500 text-lg">Error: URL Google Sheet belum diatur. Edit file dashboard.html dan masukkan URL CSV Anda.</p>';
             return;
         }
